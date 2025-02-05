@@ -6,10 +6,14 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
 
+    <!-- header -->
    <header>
+
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid ">
             <img width="60px" src="./img/duck.png" alt="">
@@ -43,14 +47,20 @@
       </nav>
    </header>
 
+   <!-- main -->
    <main>
     <div class="container">
         <div class="row">
+
             <div class="col-12 pt-4 col-lg-8">
+
+                <!-- title and button add book -->
                 <div class="d-flex justify-content-between">
                     <h1>Catalogo Libri</h1>
                     <a href="./html-css-bootstrap-dashboard/index.html" type="button" class="btn btn-primary">Aggiungi Libro</a>
                 </div>
+
+                <!-- list of books -->
                 <table class="table table-striped mt-4">
                     <thead>
                         <tr>
@@ -65,171 +75,135 @@
                           <td  scope="row ">I pilastri della terra</td>
                           <td class="d-none d-lg-table-cell">-</td>
                           <td>
-                            <button type="button" class="btn btn-success px-1 py-0 ">Disponibile</button>
+                            <span class="badge text-bg-success">Disponibile</span>
                             </td>
-                          <td class="d-flex">
-                            <button class="text-black-50  border border-dark-subtle bord rounded-1 bg-transparent">
-                                <i class="fa-solid fa-pen">
-                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                </i>
-                            </button>
-                            <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                <i class="fa-solid fa-trash">
-                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                </i>
-                            </button>
+                            <td>
+                              <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </a>
+                              <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </a>
                           </td>
                         </tr>
                         <tr>
                             <td scope="row">I promessi sposi</td>
                             <td class="d-none d-lg-table-cell">-</td>
                             <td> 
-                              <button type="button" class="btn btn-success px-1 py-0 ">Disponibile</button>
+                              <span class="badge text-bg-success">Disponibile</span>
                             </td>
-                            <td class="d-flex ">
-                                <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent">
-                                    <i class="fa-solid fa-pen">
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                    </i>
-                                </button>
-                                <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                    <i class="fa-solid fa-trash">
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                    </i>
-                                </button>
+                            <td>
+                              <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </a>    
+                              <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </a>
                             </td>
                         </tr>
                         <tr>
                             <td scope="row">I promessi sposi</td>
                             <td class="d-none d-lg-table-cell">18/10/2023</td>
                             <td> 
-                              <button type="button" class="btn btn-warning px-1 py-0 text-white">In prestito</button>
+                              <span class="badge text-bg-warning text-white">In prestito</span>
                             </td>
-                            <td class="d-flex">
-                                <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent">
-                                    <i class="fa-solid fa-pen">
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                    </i>
-                                </button>
-                                <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                    <i class="fa-solid fa-trash">
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                    </i>
-                                </button>
+                            <td>
+                              <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </a>
+                              <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </a>
                             </td>
                         </tr>
                         <tr>
                             <td scope="row">Harry Potter e la pietra filosofale</td>
                             <td class="d-none d-lg-table-cell">-</td>
                             <td>
-                              <button type="button" class="btn btn-success px-1 py-0 ">Disponibile</button>
+                              <span class="badge text-bg-success">Disponibile</span>
                               </td>
-                            <td class="d-flex">
-                              <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent">
-                                  <i class="fa-solid fa-pen">
-                                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                  </i>
-                              </button>
-                              <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                  <i class="fa-solid fa-trash">
-                                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                  </i>
-                              </button>
+                            <td>
+                              <a class="btn btn-outline-secondary">
+                                  <i class="fa-solid fa-pen"></i>
+                              </a>
+                              <a class="btn btn-outline-secondary">
+                                  <i class="fa-solid fa-trash"></i>
+                              </a>
                             </td>
                         </tr>
                         <tr>
                             <td scope="row">Il codice Da Vinci</td>
                             <td class="d-none d-lg-table-cell">-</td>
                             <td> 
-                                <button type="button" class="btn btn-danger px-1 py-0 d-flex flex-nowrap">Non disponibile</button>
+                                <span class="badge text-bg-danger">Non disponibile</span>
                                 </td>
-                            <td class="d-flex">
-                                <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent ">
-                                      <i class="fa-solid fa-pen">
-                                          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                      </i>
-                                </button>
-                                <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                      <i class="fa-solid fa-trash">
-                                          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                      </i>
-                                </button>
+                            <td>
+                                <a class="btn btn-outline-secondary">
+                                      <i class="fa-solid fa-pen"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary">
+                                      <i class="fa-solid fa-trash"></i>
+                                </a>
                             </td>
                         </tr>
                         <tr>
                               <td scope="row">Shining</td>
                               <td class="d-none d-lg-table-cell">-</td>
                               <td> 
-                                <button type="button" class="btn btn-success px-1 py-0 text-white">Disponibile</button>
+                                <span class="badge text-bg-success">Disponibile</span>
                               </td>
-                              <td class="d-flex">
-                                  <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent">
-                                      <i class="fa-solid fa-pen">
-                                          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                      </i>
-                                  </button>
-                                  <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                      <i class="fa-solid fa-trash">
-                                          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                      </i>
-                                  </button>
+                              <td>
+                                  <a class="btn btn-outline-secondary">
+                                      <i class="fa-solid fa-pen"></i>
+                                  </a>
+                                  <a class="btn btn-outline-secondary">
+                                      <i class="fa-solid fa-trash"></i>
+                                  </a>
                               </td>
                         </tr>
                         <tr>
                             <td scope="row">La divina commedia</td>
                             <td class="d-none d-lg-table-cell">21/09/2023</td>
                             <td> 
-                              <button type="button" class="btn btn-warning px-1 py-0 text-white">In prestito</button>
+                              <span class=" badge text-bg-warning text-white">In prestito</span>
                             </td>
-                            <td class="d-flex">
-                                <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent">
-                                    <i class="fa-solid fa-pen">
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                    </i>
-                                </button>
-                                <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                    <i class="fa-solid fa-trash">
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                    </i>
-                                </button>
+                            <td>
+                                <a class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
                             </td>
                         </tr>
                         <tr>
                             <td scope="row">Il trono di spade</td>
                             <td class="d-none d-lg-table-cell">-</td>
                             <td>
-                              <button type="button" class="btn btn-success px-1 py-0 ">Disponibile</button>
+                              <span class="badge text-bg-success">Disponibile</span>
                               </td>
-                            <td class="d-flex">
-                              <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent">
-                                  <i class="fa-solid fa-pen">
-                                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                  </i>
-                              </button>
-                              <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                  <i class="fa-solid fa-trash">
-                                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                  </i>
-                              </button>
+                            <td>
+                              <a class="btn btn-outline-secondary">
+                                  <i class="fa-solid fa-pen"></i>
+                              </a>
+                              <a class="btn btn-outline-secondary">
+                                  <i class="fa-solid fa-trash"></i>
+                              </a>
                             </td>
                         </tr>
                         <tr>
                             <td  scope="row">Il mondo di Sofia</td>
                             <td class="d-none d-lg-table-cell">-</td>
                             <td> 
-                              <button type="button" class="btn btn-danger px-1 py-0 ">Non disponibile</button>
+                              <span class="badge text-bg-danger ">Non disponibile</span>
                             </td>
-                            <td class="d-flex">
-                                <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent">
-                                    <i class="fa-solid fa-pen">
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                    </i>
-                                </button>
-                                <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                    <i class="fa-solid fa-trash">
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                    </i>
-                                </button>
+                            <td>
+                                <a class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
                             </td>
                         </tr>
                         <tr>
@@ -238,68 +212,59 @@
                             </td>
                             <td class="d-none d-lg-table-cell">25/07/2023</td>
                             <td> 
-                              <button type="button" class="btn btn-warning px-1 py-0 text-white">In prestito</button>
+                              <span class="badge text-bg-warning text-white">In prestito</span>
                             </td>
-                            <td class="d-flex">
-                                <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent">
-                                    <i class="fa-solid fa-pen">
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                    </i>
-                                </button>
-                                <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                    <i class="fa-solid fa-trash">
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                    </i>
-                                </button>
+                            <td>
+                                <a class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
                             </td>
                         </tr>
                         <tr>
                             <td  scope="row">Il piccolo principe</td>
                             <td class="d-none d-lg-table-cell">-</td>
                             <td>
-                              <button type="button" class="btn btn-success px-1 py-0 ">Disponibile</button>
+                              <span class="badge text-bg-success">Disponibile</span>
                               </td>
-                            <td class="d-flex">
-                              <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent">
-                                  <i class="fa-solid fa-pen">
-                                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                  </i>
-                              </button>
-                              <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                  <i class="fa-solid fa-trash">
-                                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                  </i>
-                              </button>
+                            <td>
+                              <a class="btn btn-outline-secondary">
+                                  <i class="fa-solid fa-pen"></i>
+                              </a>
+                              <a class="btn btn-outline-secondary">
+                                  <i class="fa-solid fa-trash"></i>
+                              </a>
                             </td>
                         </tr>
                         <tr>
                             <td  scope="row">La storia infinita</td>
                             <td class="d-none d-lg-table-cell">-</td>
                             <td>
-                              <button type="button" class="btn btn-success px-1 py-0 ">Disponibile</button>
+                              <span class="badge text-bg-success">Disponibile</span>
                               </td>
-                            <td class="d-flex">
-                              <button class="text-black-50 border border-dark-subtle bord rounded-1 bg-transparent">
-                                  <i class="fa-solid fa-pen">
-                                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                  </i>
-                              </button>
-                              <button class="text-black-50 border border-dark-subtle rounded-1 bg-transparent">
-                                  <i class="fa-solid fa-trash">
-                                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                                  </i>
-                              </button>
+                            <td>
+                              <a class="btn btn-outline-secondary">
+                                  <i class="fa-solid fa-pen"></i>
+                              </a>
+                              <a class="btn btn-outline-secondary">
+                                  <i class="fa-solid fa-trash"></i>
+                              </a>
                             </td>
                         </tr>
-                      </tbody>
+                    </tbody>
                 </table>
             </div>
+
             <div class="col">
-                <div class="card mb-5 mt-4">
-                    <div class="card-header">
-                        <h1>Todo</h1>
-                    </div>
-                    <ul class="list-group p-3">
+
+              <!-- card with todo -->
+              <div class="card mb-5 mt-4">
+                <div class="card-header">
+                    <h1>Todo</h1>
+                </div>
+                <ul class="list-group p-3">
                         <li class="list-group-item">
                             <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
                             <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
@@ -312,13 +277,15 @@
                             <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
                             <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
                         </li>
-                    </ul>   
+                </ul>   
+              </div>
+
+              <!-- card with F.A.Q. -->
+              <div class="card mb-5">
+                <div class="card-header">
+                  <h1>F.A.Q.</h1>
                 </div>
-                <div class="card mb-5">
-                    <div class="card-header">
-                        <h1>F.A.Q.</h1>
-                    </div>
-                    <div class="accordion accordion-flush p-3" id="accordionFlushExample">
+                <div class="accordion accordion-flush p-3" id="accordionFlushExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -349,8 +316,8 @@
                             <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                           </div>
                         </div>
-                    </div>   
-                </div>
+                </div>   
+              </div>
                 
             </div>
         </div>

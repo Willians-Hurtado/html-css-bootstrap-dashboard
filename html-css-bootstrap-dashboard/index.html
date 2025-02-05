@@ -50,23 +50,58 @@
         <div class="row g-5">
             
             <div class="col">
-                <p class="h5">Nome Autore</p>
+                <p class="h6">Nome Autore</p>
               <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore" aria-label=" Author's name">
             </div>
             <div class="col">
-                <p class="h5">Cognome Autore</p>
+                <p class="h6">Cognome Autore</p>
               <input type="text" class="form-control" placeholder="Inserisci il cognome" aria-label="Author's last name">
             </div>
         </div>
 
-        <div class="row py-4">
+        <div class="row pt-4">
             <div class="col-12">
-                <p class="h5">Titolo</p>
+                <p class="h6">Titolo</p>
               <input type="text" class="form-control" placeholder="Inserisci il titolo del libro" aria-label="book title">
               <p class="text-body-secondary " style="font-size: 14px;">Titolo versione italiana</p>
             </div>
             
         </div>
+
+        <div class="row pb-4">
+            <div class="col-12 col-lg-4 pb-3">
+                <p class="h6">Genere</p>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected> Scegli il genere</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Finance">Finance</option>
+                </select>
+            </div>
+            <div class="col-12 col-lg-4 pb-3">
+                <p class="h6">Anno di Pubblicazione</p>
+              <input type="text" class="form-control" placeholder="Inserisci l'anno" aria-label="Year">
+            </div>
+            <div class="col-12 col-lg-4">
+                <p class="h6">ISBN#</p>
+              <input type="text" class="form-control" placeholder="Inserisci il codice ISBN#" aria-label="ISBN# code">
+            </div>           
+        </div>
+        <hr class="text-body-secondary ">
+
+        <div class="row">
+            <div class="col-12">
+                <p class="h6">Note</p>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                </div>
+            </div>
+        </div>
+        
+
     </div>
    </main>
     
